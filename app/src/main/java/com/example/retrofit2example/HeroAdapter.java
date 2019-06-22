@@ -41,23 +41,10 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.HeroViewHolder
 
         holder.textName.setText(hero.getId());
         holder.textRealName.setText(hero.getTitle());
-//        holder.textApp.setText(hero.getCreated_By());
 
         Log.i(TAG, "onBindViewHolder: " + hero.getTitle());
 
     }
-
-//    private static DiffUtil.ItemCallback<Hero> DIFF_CALLBACK = new DiffUtil.ItemCallback<Hero>() {
-//        @Override
-//        public boolean areItemsTheSame(@NonNull Hero hero, @NonNull Hero t1) {
-//            return hero.getId()
-//        }
-//
-//        @Override
-//        public boolean areContentsTheSame(@NonNull Hero hero, @NonNull Hero t1) {
-//            return false;
-//        }
-//    }
 
     @Override
     public int getItemCount() {
