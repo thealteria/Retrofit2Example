@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import java.util.List;
 
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView.setAdapter(adapter);
 
                 adapter.notifyDataSetChanged();
+
+                Log.i(TAG, "onChanged: " + viewModel.getHeroObservable().getValue());
             }
         });
     }

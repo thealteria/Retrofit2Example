@@ -36,7 +36,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.HeroViewHolder
         Hero hero = heroList.get(position);
 
 //        Glide.with(mCtx)
-//                .load(hero.getImageurl())
+//        .load(hero.getImageurl())
 //                .into(holder.imageView);
 
         holder.textName.setText(hero.getName());

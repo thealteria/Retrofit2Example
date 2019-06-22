@@ -4,9 +4,6 @@ import android.app.Application;
 import android.arch.lifecycle.MutableLiveData;
 import android.support.annotation.NonNull;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import java.util.List;
 
 import retrofit2.Call;
@@ -18,7 +15,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 class HeroRepository {
 
     private static HeroRepository repository;
-    private static final String TAG = "HeroRepo";
     private Retrofit retrofit;
 
     static HeroRepository getInstance() {
