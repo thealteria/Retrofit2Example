@@ -1,5 +1,8 @@
 package com.example.retrofit2example;
 
+import androidx.annotation.NonNull;
+import androidx.lifecycle.LifecycleObserver;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -11,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
+import android.view.View;
 
 import java.util.List;
 
@@ -48,5 +52,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
