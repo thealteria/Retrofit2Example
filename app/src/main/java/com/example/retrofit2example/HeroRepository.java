@@ -41,7 +41,7 @@ class HeroRepository {
         }
 
         ApiInterface apiInterface = retrofit.create(ApiInterface.class);
-        Call<List<Hero>> call = apiInterface.getHeroList();
+        Call<List<Hero>> call = apiInterface.getHeroList("9810266790");
 
         call.enqueue(new Callback<List<Hero>>() {
             @Override

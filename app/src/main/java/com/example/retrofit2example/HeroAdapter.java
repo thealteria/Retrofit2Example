@@ -39,10 +39,10 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.HeroViewHolder
 //                .load(hero.getImageurl())
 //                .into(holder.imageView);
 
-        holder.textName.setText(hero.getId());
-        holder.textRealName.setText(hero.getTitle());
+        holder.textName.setText(hero.getName());
+        holder.textRealName.setText(hero.getSubjects());
 
-        Log.i(TAG, "onBindViewHolder: " + hero.getTitle());
+        Log.i(TAG, "onBindViewHolder: " + hero.getSubjects());
 
     }
 

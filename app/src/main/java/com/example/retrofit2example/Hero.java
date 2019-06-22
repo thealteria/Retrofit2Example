@@ -4,17 +4,17 @@ import com.google.gson.annotations.SerializedName;
 
 class Hero {
 
-    @SerializedName("id")
-    private String id;
+    @SerializedName("name")
+    private String name;
 
-    @SerializedName("title")
-    private String title;
+    @SerializedName("subjects")
+    private String subjects;
 
-    String getId() {
-        return id;
+    String getName() {
+        return name;
     }
 
-    String getTitle() {
-        return title;
+    String getSubjects() {
+        return subjects;
     }
 }
