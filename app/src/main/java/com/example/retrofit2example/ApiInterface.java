@@ -12,16 +12,8 @@ import retrofit2.http.Query;
 public interface ApiInterface {
 
     String BASE_URL = "https://api-dot-gpschat.appspot.com/GetClasses/";
-//            "https://simplifiedcoding.net/demos/";
-
-//    @GET("posts")
-//    Call<List<Hero>> getHeroList();
 
     @POST("appliedleads")
     @FormUrlEncoded
     Call<List<Hero>> getHeroList(@Field("phone") String phone);
-
-//    pass params
-//    using @Field annotation
-//    also add @FormUrlEncoded annotation
 }

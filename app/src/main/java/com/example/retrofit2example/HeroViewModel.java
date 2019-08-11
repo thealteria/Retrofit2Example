@@ -1,22 +1,20 @@
 package com.example.retrofit2example;
 
-import android.app.Application;
-import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 
 import java.util.List;
 
-class HeroViewModel extends AndroidViewModel {
+class HeroViewModel extends ViewModel {
 
-    private final LiveData<List<Hero>> heroList;
+    private final LiveData<List<Hero>> heroLiveData;
 
-    public HeroViewModel(Application application) {
-        super(application);
+    public HeroViewModel() {
 
-        heroList = HeroRepository.getInstance().getHeroList(application);
+        heroLiveData = HeroRepository.getInstance().getHeroList();
     }
 
     LiveData<List<Hero>> getHeroObservable() {
-        return heroList;
+        return heroLiveData;
     }
 }

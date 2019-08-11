@@ -1,19 +1,18 @@
 package com.example.retrofit2example;
 
 import android.content.Context;
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
 public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.HeroViewHolder> {
-
     private static final String TAG = "HeroAdapter";
 
     private Context mCtx;
@@ -41,9 +40,6 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.HeroViewHolder
 
         holder.textName.setText(hero.getName());
         holder.textRealName.setText(hero.getSubjects());
-
-        Log.i(TAG, "onBindViewHolder: " + hero.getSubjects());
-
     }
 
     @Override
